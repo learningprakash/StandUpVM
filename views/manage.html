@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Virtual Stand-up</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/newnote">New Note</a></li>
+                <li><a href="http://gsu.orgsync.com/org/isac/home">ISAC Home</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="text-center">
+        <h1>Virtual Stand-up Meeting Notes</h1>
+        <p class="lead">Manage Members And Project And Tasks </p>
+    </div>
+
+    <div>
+        <!--<h2>Latest Notes</h2>-->
+        <div class="container">
+            <!--Filter notes list by member name-->
+            <form action="/" method="post">
+                <div class="row clearfix">
+                    <div class="col-md-4 column">
+                        <select id="memberName" name="memberName" class="form-control">
+                            <option value="">(Show All Members)</option>
+                            <option value="Mike">Mike</option>
+                            <option value="Ishaka">Ishaka</option>
+                            <option value="Ethelena">Ethelena</option>
+                            <option value="Steff">Steff</option>
+                            <option value="Anette">Anette</option>
+                            <option value="Prakash">Prakash</option>
+                        </select>
+                    </div>
+                    <div class="col-md-8 column">
+                        <!-- Text Box -->
+                        <!-- Button -->
+                        <button id="addTeamMember" name="addTeamMember" class="btn btn-primary" type="submit">Add Member</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br />
+      
+    </div>
+</div><!-- /.container -->
+</body>
+</html>
